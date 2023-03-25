@@ -1,0 +1,22 @@
+sort1 uses: Bubble
+How do you know?:
+Because the upper bounds of bigO is n squared and the lower bounds
+is n, bubble sort will perform very well for an already sorted array,
+as this is the best case scenario, so it's bigO will be it's lower bounds.
+This results in bubble being the fastest for an already sorted array. Because bubble
+compares pairs of numbers and organizes them left to right, the reversed arrays will take
+a long time, because it has to completely reverse the array.
+
+sort2 uses: Merge
+How do you know?:
+Merge sort will do the best for large arrays that are not already sorted.
+This is because its upper and lower bounds for BigO is (nlogn). The larger
+the n is, the better is performs compared to other methods that have an upper
+bounds of n squared.
+
+sort3 uses: Selection Sort
+How do you know?:
+Selection sort has upper and lower bounds of n squared, making it a bad
+option, especially for long arrays. It will perform comparably well to bubble
+in the worst case scenarios (long random arrays), but will do worse than bubble
+in the best case scenario, because it will not do better than n squared.
