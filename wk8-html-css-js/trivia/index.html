@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <!-- <script></script> -->
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <div class="question-1">
+                    <h3>Which was René Magritte’s first surrealist painting?</h3>
+                    <button class="button-incorrect q-1">Not to Be Reproduced</button>
+                    <button class="button-correct q-1">The Lost Jockey</button>
+                    <button class="button-incorrect q-1">Personal Values</button>
+                    <button class="button-incorrect q-1">The Lovers</button>
+                </div>
+                <div class="question-2">
+                    <h3>What’s the heaviest organ in the human body?</h3>
+                    <button class="button-incorrect q-2">Brain</button>
+                    <button class="button-incorrect q-2">Heart</button>
+                    <button class="button-correct q-2">Liver</button>
+                    <button class="button-incorrect q-2">Skin</button>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which US city is the sunniest major city and sees more than 320 sunny days each year?</h3>
+                <form id="form-1">
+                    <input autocomplete="off" autofocus type="text" id="input-1">
+                    <button type="submit">Check Answer</button>
+                </form>
+                <p id="fb-1"></p>
+                <h3>What element does the chemical symbol Au stand for?</h3>
+                <form id="form-2">
+                    <input autocomplete="off" autofocus type="text" id="input-2">
+                    <button type="submit">Check Answer</button>
+                </form>
+                <p id="fb-2"></p>
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>

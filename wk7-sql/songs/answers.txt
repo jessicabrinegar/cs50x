@@ -1,0 +1,17 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you
+characterize their audio aura?
+Based on the average energy (0.65906), valence (0.484443), and danceability (0.71646),
+I would characterize the listeners aura as euphoric, dreamy, and fun. This might align well with
+spotifies pink and orange auras.
+
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative
+of the listener. What better ways of calculating this aura would you propose?
+
+This may not be representative because taking an average results in the 'extremes' being cancelled out.
+For example, maybe a listener listened to slow, mellow songs half the time, and fast, upbeat songs
+the other hald of the time. You could easily assign two separate moods to them if you were to split
+the data in half and take the average of each half, for example. Or you could take the mode of
+each category. But when you take the average of the categories, you are getting values that are somewhere
+in the middle of what they were listening to, which may not be a good representation if they were listening
+to the extremes.
