@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+        <h2>Your history</h2>
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price (per share)</th>
+                <th>Transaction Type</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <td>{{ transaction["stock_symbol"] }}</td>
+                    <td>{{ transaction["name"] }}</td>
+                    <td>{{ transaction["number_shares"] }}</td>
+                    <td>{{ transaction["price_per_share"] }}</td>
+                    <td>{{ transaction["transaction_type"] }}</td>
+                    <td>{{ transaction["datetime"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" align="right"><strong>Cash Remaining: </strong>{{ cash }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
